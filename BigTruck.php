@@ -1,10 +1,9 @@
 <?php
 
-include_once "CarryCargoInterface.php";
 
-class Truck extends Car implements CarryCargoInterface
+class BigTruck extends Truck implements CarryCargoInterface
 {
-    private $param = "красном";
+    private $param = "большом";
 
     public function run()
     {
