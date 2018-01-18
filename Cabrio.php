@@ -11,24 +11,28 @@ include_once "PassengerCar.php";
 
 class Cabrio extends PassengerCar implements CabrioInterface
 {
+    public $doors = 2;
+
     public function run()
     {
-        echo "Ехать на кабриолете";
+        echo "Ехать на кабриолете. ";
+
+        return $this->safety();
     }
 
-    public function stop()
-    {
-        parent::stop();
-    }
+//    public function stop()
+//    {
+//        parent::stop();
+//    }
 
     public function openRoof()
     {
-        echo 'Крыша открыта';
+        echo 'Крыша открыта. ';
     }
 
     public function closeRoof()
     {
-        echo "Крыша закрыта";
+        echo "Крыша закрыта. ";
     }
 
 }
