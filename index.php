@@ -11,9 +11,10 @@ include_once "Cabrio.php";
 include_once "Truck.php";
 include_once "BigTruck.php";
 include_once "PassengerCar.php";
+include_once "CarRacing.php";
 
 // Массив автомобилей
-$arr = array('Cabrio', 'Truck', 'PassengerCar', 'BigTruck');
+$arr = array('Cabrio', 'Truck', 'PassengerCar', 'BigTruck', 'CarRacing');
 // метод который вызываем
 $method = 'run';
 
